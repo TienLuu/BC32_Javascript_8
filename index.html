@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript B-8</title>
+
+    <!-- BS4 CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- BÀI TẬP TỔNG HỢP -->
+    <div class="card">
+        <div class="card-header">
+            Bài Tập Tổng Hợp
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Nhập số nguyên:</label>
+                <input type="number" name="" id="number" class="form-control" placeholder="Nhập vào số nguyên"
+                    aria-describedby="helpId">
+                <button type="button" class="btn btn-success mt-2" onclick="addIntegerNumber()">Nhập</button>
+            </div>
+            <button type="button" class="btn btn-success mt-2" onclick="calcSumPositive()">Tổng các số dương</button>
+            <button type="button" class="btn btn-success mt-2" onclick="countPositive()">Đếm số dương</button>
+            <button type="button" class="btn btn-success mt-2" onclick="findMinNumber()">Tìm số nhỏ nhất</button>
+            <button type="button" class="btn btn-success mt-2" onclick="findMinPositive()">Tìm số dương nhỏ
+                nhất</button>
+            <button type="button" class="btn btn-success mt-2" onclick="findLastEvenNumber()">Tìm số chẵn cuối</button>
+            <button type="button" class="btn btn-success mt-2" onclick="swapPosition()">Hoán đổi vị trí</button>
+            <button type="button" class="btn btn-success mt-2" onclick="sortAscending()">Sắp xếp tăng dần</button>
+            <button type="button" class="btn btn-success mt-2" onclick="findFirstPrimeNumber()">Tìm số NT đầu
+                tiên</button>
+            <button type="button" class="btn btn-success mt-2" onclick="realNumber()">Nhập mảng số
+                thực</button>
+            <button type="button" class="btn btn-success mt-2" onclick="compareNumber()">So sánh số lượng số dương và số
+                âm</button>
+            <div class="mt-2 d-none" id="position">
+                <div class="form-group">
+                    <label for="">Vị trí 1:</label>
+                    <input type="number" name="" id="position1" class="form-control" placeholder="Nhập vào số nguyên"
+                        aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <label for="">Vị trí 2:</label>
+                    <input type="number" name="" id="position2" class="form-control" placeholder="Nhập vào số nguyên"
+                        aria-describedby="helpId">
+                </div>
+                <button type="button" class="btn btn-success" onclick="getIndex()">Hoán đổi</button>
+            </div>
+            <div class="mt-2 d-none" id="showRealNumber">
+                <div class="form-group">
+                    <label for="">Nhập mảng số thực:</label>
+                    <input type="number" name="" id="realNumber" class="form-control" placeholder="Nhập vào số nguyên"
+                        aria-describedby="helpId">
+                </div>
+                <button type="button" class="btn btn-success" onclick="addRealNumber()">Nhập</button>
+                <button type="button" class="btn btn-success" onclick="findIntegerNumber()">Tìm số nguyên trong
+                    mảng</button>
+            </div>
+        </div>
+        <div class="card-footer text-muted" id="showArray">
+        </div>
+        <div class="card-footer text-muted mt-3" id="showResult">
+        </div>
+    </div>
+
+    <!-- OPTIONAL JAVASCRIPT -->
+    <!-- JQUERY FIRST, THEN POPPER.JS, THEN BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
